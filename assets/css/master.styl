@@ -1,0 +1,53 @@
+// VARIABLES
+
+$yellow        = #E3C646
+$lightBrown    = #F2EFEB
+$brown         = #D8CDB4
+$darkBrown     = #554B3F
+$red           = #9B0000
+
+// MIXINS
+
+background-gradient($color1)
+   $color2 = darken($color1, 20%)
+   $color3 = darken($color2, 20%)
+   $color4 = desaturate(lighten($color1, 20%), 20%)
+   $stop1 = 50%
+   $stop2 = 100%
+   background-image: -ms-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: -moz-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: -o-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color1), color-stop(1, $color2))
+   background-image: -webkit-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   border-top-color: $color4
+   border-left-color: $color4
+   border-bottom-color: $color3
+   border-right-color: $color3
+
+
+// MAIN
+
+@import '_sticky-footer'
+
+.block
+   &#heading
+      padding: 30px 20px
+      background-color: $yellow
+      *
+         text-align: center
+      h1 
+         font-size: 40px
+      a
+         color: darken($yellow, 50%)
+         text-decoration: underline
+      a.btn
+         color: white
+         text-decoration: none
+
+// BUTTONS
+
+.btn-primary
+   background-gradient($red)
+   &:hover
+      border-color: $red
