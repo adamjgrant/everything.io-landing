@@ -17,9 +17,17 @@ body {
   line-height: 60px;
   margin: 0;
 }
+.block {
+  padding-bottom: 40px;
+}
+.block h2 {
+  font-size: 20px;
+}
 .block#heading {
-  padding: 30px 20px;
-  background-color: #e3c646;
+  padding: 20px;
+}
+.block#heading img {
+  max-width: 100%;
 }
 .block#heading * {
   text-align: center;
@@ -27,30 +35,46 @@ body {
 .block#heading h1 {
   font-size: 40px;
 }
+.block#heading h1.logo {
+  font-family: "rooney-web", sans-serif;
+}
+.block#heading h1.subtitle {
+  margin-bottom: 50px;
+}
 .block#heading a {
-  color: #816d14;
+  color: #907701;
   text-decoration: underline;
 }
 .block#heading a.btn {
   color: #fff;
   text-decoration: none;
+  font-size: 16px;
+}
+#footer {
+  background-color: #f2efeb;
+}
+a {
+  color: #9b0000;
+}
+*,
+p,
+em,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+b,
+i,
+table,
+div {
+  font-family: "proxima-nova", sans-serif;
 }
 .btn-primary {
-  background-image: -ms-linear-gradient(top, #9b0000, 50%, #7c0000, 100%);
-  background-image: -moz-linear-gradient(top, #9b0000, 50%, #7c0000, 100%);
-  background-image: -o-linear-gradient(top, #9b0000, 50%, #7c0000, 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9b0000), color-stop(1, #7c0000));
-  background-image: -webkit-linear-gradient(top, #9b0000, 50%, #7c0000, 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9b0000), color-stop(0.25, 50%), color-stop(0.5, #7c0000), color-stop(1, 100%));
-  background-image: -webkit-linear-gradient(top, #9b0000 0%, 50% 25%, #7c0000 50%, 100% 100%);
-  background-image: -moz-linear-gradient(top, #9b0000 0%, 50% 25%, #7c0000 50%, 100% 100%);
-  background-image: -o-linear-gradient(top, #9b0000 0%, 50% 25%, #7c0000 50%, 100% 100%);
-  background-image: -ms-linear-gradient(top, #9b0000 0%, 50% 25%, #7c0000 50%, 100% 100%);
-  background-image: linear-gradient(top, #9b0000 0%, 50% 25%, #7c0000 50%, 100% 100%);
-  border-top-color: #cb1717;
-  border-left-color: #cb1717;
-  border-bottom-color: #630000;
-  border-right-color: #630000;
+  background-color: #9b0000;
+  border-color: #9b0000;
 }
 .btn-primary:hover {
   border-color: #9b0000;

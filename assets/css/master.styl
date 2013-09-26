@@ -1,6 +1,8 @@
+@import '_sticky-footer'
+
 // VARIABLES
 
-$yellow        = #E3C646
+$yellow        = #FDD726
 $lightBrown    = #F2EFEB
 $brown         = #D8CDB4
 $darkBrown     = #554B3F
@@ -28,26 +30,44 @@ background-gradient($color1)
 
 // MAIN
 
-@import '_sticky-footer'
-
 .block
+   h2
+      font-size: 20px
+   padding-bottom: 40px
    &#heading
-      padding: 30px 20px
-      background-color: $yellow
+      padding: 20px
+      img
+         max-width: 100%
       *
          text-align: center
       h1 
          font-size: 40px
+         &.logo
+            font-family: "rooney-web", sans-serif
+         &.subtitle
+            margin-bottom: 50px
       a
          color: darken($yellow, 50%)
-         text-decoration: underline
+         text-decoration: underline 
       a.btn
          color: white
          text-decoration: none
+         font-size: 16px
+#footer
+   background-color: $lightBrown
+
+// TYPOGRAPHY
+
+a
+   color: $red
+*, p, em, label, h1, h2, h3, h4, h5, strong, b, i, table, div
+   font-family: "proxima-nova", sans-serif
 
 // BUTTONS
 
 .btn-primary
-   background-gradient($red)
+   // background-gradient($red)
+   background-color: $red
+   border-color: $red
    &:hover
       border-color: $red

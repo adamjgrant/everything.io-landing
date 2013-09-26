@@ -14,32 +14,13 @@
     <div id="wrap">
 <div class="container">
   <div class="row">
-    <section id="heading" class="block col col-lg-12"><h1>Kickstrap 2</h1>
-      <p>Bootstrap extended <br/>with apps, themes, and UI extras</p>
-      <p><a href="#" class="btn btn-large btn-primary">Download</a></p>
-      <p><em>Coming soon. Download our <a href="http://getkickstrap.com/download">Bootstrap 3 ready version 1.5</a> until then.</em></p>
+    <section id="heading" class="block col col-lg-12">
+      <h1 class="logo">everything.io</h1>
+      <h1 class="subtitle">The Operating System <br/>for your Stuff. </h1><img src="img/ipad.png"/>
     </section>
     <section class="block col col-lg-12">
-      <h1>About</h1>
-      <p>Bootstrap empowers you with CSS and JavaScript for creating common, minimalistic web applications.</p>
-      <p>Kickstrap is a standard for extending the functionality of Bootstrap with themes, extra UI components, advanced JavaScript via JSPM, and MVC-pattern UI-binding via AngularJS.</p>
-      <p>Simply put--everything you need to create a web app of any scale, yet nothing you have to use for beginner web developers.</p>
-      <p>You may not know what to do with all these technology, so we've provided working example templates using these technologies.</p>
-    </section>
-    <section class="block col col-lg-12">
-      <h1>Themes</h1>
-    </section>
-    <section class="block col col-lg-12">
-      <h1>Apps</h1>
-    </section>
-    <section class="block col col-lg-12">
-      <h1>UI Extras</h1>
-    </section>
-    <section class="block col col-lg-12">
-      <h1>JSPM</h1>
-    </section>
-    <section class="block col col-lg-12">
-      <h1>Angular JS</h1>
+      <h2>Quickly start and build web apps </h2>
+      <p>[GIF: Starting a Kickstrap project, example templates]</p>
     </section>
   </div>
 </div>
@@ -48,12 +29,17 @@
       <div class="container">
         <div class="row">
           <div class="col col-lg-12">
-            <p>&copy; <a href="http://adamkochanowicz.com">Adam Kochanowicz</a>. JSPM by <a href="#">Guy Bedford</a></p>
+            <p>&copy; <a href="http://adamkochanowicz.com">Adam Kochanowicz</a></p>
           </div>
         </div>
       </div>
     </footer>
-    <script data-main="js/main" src="js/require.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+    <script data-main="js/main" src="js/require.js"></script>
+    <script src="//use.typekit.net/odk7zju.js"></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+      
+    </script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) {
   msg.data == 'reload' && window.location.reload();
   if (msg.data == 'compiling'){ 
