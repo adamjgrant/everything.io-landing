@@ -1,0 +1,16 @@
+background-gradient($color1)
+   $color2 = darken($color1, 20%)
+   $color3 = darken($color2, 20%)
+   $color4 = desaturate(lighten($color1, 20%), 20%)
+   $stop1 = 50%
+   $stop2 = 100%
+   background-image: -ms-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: -moz-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: -o-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color1), color-stop(1, $color2))
+   background-image: -webkit-linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   background-image: linear-gradient(top, $color1, $stop1, $color2, $stop2)
+   border-top-color: $color4
+   border-left-color: $color4
+   border-bottom-color: $color3
+   border-right-color: $color3

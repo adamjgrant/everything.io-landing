@@ -1,43 +1,26 @@
 @import '_sticky-footer'
+@import '_variables'
+@import '_mixins'
 
-// VARIABLES
+body
+   background-color: $blue
 
-$yellow        = #FDD726
-$lightBrown    = #F2EFEB
-$brown         = #D8CDB4
-$darkBrown     = #554B3F
-$red           = #9B0000
-
-// MIXINS
-
-background-gradient($color1)
-   $color2 = darken($color1, 20%)
-   $color3 = darken($color2, 20%)
-   $color4 = desaturate(lighten($color1, 20%), 20%)
-   $stop1 = 50%
-   $stop2 = 100%
-   background-image: -ms-linear-gradient(top, $color1, $stop1, $color2, $stop2)
-   background-image: -moz-linear-gradient(top, $color1, $stop1, $color2, $stop2)
-   background-image: -o-linear-gradient(top, $color1, $stop1, $color2, $stop2)
-   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color1), color-stop(1, $color2))
-   background-image: -webkit-linear-gradient(top, $color1, $stop1, $color2, $stop2)
-   background-image: linear-gradient(top, $color1, $stop1, $color2, $stop2)
-   border-top-color: $color4
-   border-left-color: $color4
-   border-bottom-color: $color3
-   border-right-color: $color3
-
-
-// MAIN
-
+.break
+   background-color: #222222
+img
+   max-width: 100%
+   &.spacious
+      margin: 20px inherit
 .block
    h2
       font-size: 20px
    padding-bottom: 40px
    &#heading
       padding: 20px
+      padding-bottom: 0px
       img
          max-width: 100%
+         cursor: pointer
       *
          text-align: center
       h1 
@@ -45,7 +28,9 @@ background-gradient($color1)
          &.logo
             font-family: "rooney-web", sans-serif
          &.subtitle
-            margin-bottom: 50px
+            margin-bottom: 20px
+            color: darken($blue, 40%)
+            font-size: 25px
       a
          color: darken($yellow, 50%)
          text-decoration: underline 
@@ -59,9 +44,12 @@ background-gradient($color1)
 // TYPOGRAPHY
 
 a
-   color: $red
-*, p, em, label, h1, h2, h3, h4, h5, strong, b, i, table, div
+   color: $blue
+*, p, em, label, h1, h2, h3, h4, h5, strong, b, i, table, div, ul, li
    font-family: "proxima-nova", sans-serif
+   color: white;
+.branded
+   font-family: "rooney-web", sans-serif !important
 
 // BUTTONS
 

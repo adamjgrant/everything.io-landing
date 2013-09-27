@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta name="description" content="description of your site">
     <meta name="author" content="author of the site">
+    <script src="//use.typekit.net/odk7zju.js"></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+      
+    </script>
     <title>Kickstrap 2</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
@@ -16,14 +21,39 @@
   <div class="row">
     <section id="heading" class="block col col-lg-12">
       <h1 class="logo">everything.io</h1>
-      <h1 class="subtitle">The Operating System <br/>for your Stuff. </h1><img src="img/ipad.png"/>
-    </section>
-    <section class="block col col-lg-12">
-      <h2>Quickly start and build web apps </h2>
-      <p>[GIF: Starting a Kickstrap project, example templates]</p>
+      <h1 class="subtitle">The operating system <br/>for your stuff. </h1><a href="img/full.png"><img src="img/iPad.png"/></a>
     </section>
   </div>
 </div>
+<article class="break">
+  <div class="container">
+    <div class="row">
+      <section class="block col col-lg-12">
+        <h2>Computers organize your files. <span class="branded">everything</span> organizes your physical possessions. </h2>
+        <p> <span class="branded">everything</span> can digitally organize your connected devices or the things you add manually.</p>
+        <p>Imagine the possibilities:</p>
+        <ul>
+          <li>Transfer photos from your cloud-connected camera to your phone or tablet with simple drag and drop.</li>
+          <li>Create alerts when your connected devices are using too much energy. Even shut them off right from the web app.</li>
+        </ul>
+        <p><img src="img/energy.png" class="spacious"/></p>
+        <ul>
+          <li>Keep valuable purchase information for expensive purchases ready for tax day.</li>
+          <li>Tag the clothes you loan out to friends.</li>
+        </ul>
+        <p><img src="img/onloan.png" class="spacious"/></p>
+        <ul>
+          <li>The food in your fridge can let you know when it's about to expire.</li>
+        </ul>
+        <p><img src="img/alert.png" class="spacious"/></p>
+        <p>Manufacturers of Internet-connected physical products (Think fitness bands and smart lamps) can use our basic Input/Output API (That's where the "io" comes from) to customize how the products display information and what functions they can provide remotely.</p>
+        <h2>How can I get <span class="branded">everything</span>?</h2>
+        <p>Sorry, we're not ready just yet, but you can <a href="#">leave us your email </a> and we'll let you know when we're ready.</p>
+        <p>If you're interested in having your physical product as one of the first to use <span class="branded">everything</span>, <a href="#">let us know.</a></p>
+      </section>
+    </div>
+  </div>
+</article>
     </div>
     <footer id="footer">
       <div class="container">
@@ -34,12 +64,7 @@
         </div>
       </div>
     </footer>
-    <script data-main="js/main" src="js/require.js"></script>
-    <script src="//use.typekit.net/odk7zju.js"></script>
-    <script>
-      try{Typekit.load();}catch(e){}
-      
-    </script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+    <script data-main="js/main" src="js/require.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) {
   msg.data == 'reload' && window.location.reload();
   if (msg.data == 'compiling'){ 
